@@ -23,6 +23,8 @@ model PostingEvent {
   isShow      Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@map("posting_event")
 }
 
 model User {
@@ -31,6 +33,8 @@ model User {
   password  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@map("user")
 }
 
 model RefreshToken {
@@ -39,6 +43,8 @@ model RefreshToken {
   userId    String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@map("refresh_token")
 }
 
 model PostingHrBroadcast {
@@ -51,6 +57,8 @@ model PostingHrBroadcast {
   isShow      Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@map("posting_hr_broadcast")
 }
 
 model PostingHrInfo {
@@ -63,6 +71,8 @@ model PostingHrInfo {
   isShow      Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@map("posting_hr_info")
 }
 
 model PostingCsr {
@@ -74,6 +84,8 @@ model PostingCsr {
   isShow      Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@map("posting_csr")
 }
 
 model PostingWingsMart {
@@ -84,6 +96,8 @@ model PostingWingsMart {
   isShow      Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@map("posting_wings_mart")
 }
 
 model PostingWFCArticel {
@@ -96,4 +110,6 @@ model PostingWFCArticel {
   isShow      Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@map("posting_wfc_articel")
 }
